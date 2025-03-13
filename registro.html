@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registro de Usuario</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body
+    bgcolor="#f4f4f4"
+    text="#333333"
+    link="#006699"
+    vlink="#003366"
+    alink="#cc3333"
+  >
+    <!-- Tabla principal que ocupa toda la pantalla -->
+    <table border="0" width="100%" cellspacing="0" cellpadding="10">
+      <!-- Cabecera -->
+      <tr height="15%" bgcolor="#2c3e50">
+        <td colspan="3" align="center">
+          <h1 style="color: white">Registro de Usuario</h1>
+        </td>
+      </tr>
+
+      <!-- Cuerpo principal -->
+      <tr height="70%">
+        <td colspan="3" bgcolor="white" valign="top" style="padding: 20px">
+          <form action="procesar_registro.html" method="post">
+            <table border="0" width="100%" cellspacing="10">
+              <!-- Información Personal -->
+              <tr>
+                <td colspan="2" bgcolor="#bdc3c7" align="center">
+                  <b>Información Personal</b>
+                </td>
+              </tr>
+              <tr>
+                <td width="30%"><label for="nombre">Nombre:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="apellido">Apellido:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Correo Electrónico:</label></td>
+                <td>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="telefono">Teléfono:</label></td>
+                <td>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    pattern="[0-9]{10}"
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    id="fecha_nacimiento"
+                    name="fecha_nacimiento"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="edad"
+                    name="edad"
+                    required
+                    min="18"
+                    max="100"
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="genero">Género:</label></td>
+                <td>
+                  <select id="genero" name="genero" style="width: 100%">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="color_ojos">Color de Ojos:</label></td>
+                <td>
+                  <input type="color" id="color_ojos" name="color_ojos" />
+                </td>
+              </tr>
+
+              <!-- Información de Cuenta -->
+              <tr>
+                <td colspan="2" bgcolor="#bdc3c7" align="center">
+                  <b>Información de Cuenta</b>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="usuario">Nombre de Usuario:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="usuario"
+                    name="usuario"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="password">Contraseña:</label></td>
+                <td>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="confirm_password">Confirmar Contraseña:</label>
+                </td>
+                <td>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    required
+                    style="width: 100%"
+                  />
+                </td>
+              </tr>
+
+              <!-- Preferencias -->
+              <tr>
+                <td colspan="2" bgcolor="#bdc3c7" align="center">
+                  <b>Preferencias</b>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label>Intereses:</label><br />
+                  <input
+                    type="checkbox"
+                    id="noticias"
+                    name="intereses"
+                    value="noticias"
+                  />
+                  <label for="noticias">Noticias</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="tecnologia"
+                    name="intereses"
+                    value="tecnologia"
+                  />
+                  <label for="tecnologia">Tecnología</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="deportes"
+                    name="intereses"
+                    value="deportes"
+                  />
+                  <label for="deportes">Deportes</label><br /><br />
+
+                  <label>Tipo de Suscripción:</label><br />
+                  <input
+                    type="radio"
+                    id="gratis"
+                    name="suscripcion"
+                    value="gratis"
+                    checked
+                  />
+                  <label for="gratis">Gratis</label>
+
+                  <input
+                    type="radio"
+                    id="premium"
+                    name="suscripcion"
+                    value="premium"
+                  />
+                  <label for="premium">Premium</label>
+                </td>
+              </tr>
+
+              <!-- Otros -->
+              <tr>
+                <td colspan="2" bgcolor="#bdc3c7" align="center">
+                  <b>Otros</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="comentarios">Comentarios adicionales:</label>
+                </td>
+                <td>
+                  <textarea
+                    id="comentarios"
+                    name="comentarios"
+                    rows="4"
+                    cols="50"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="archivo">Subir foto de perfil:</label></td>
+                <td><input type="file" id="archivo" name="archivo" /></td>
+              </tr>
+
+              <!-- Campo tipo 'range' para altura -->
+              <tr>
+                <td><label for="altura">Altura (cm):</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="altura"
+                    name="altura"
+                    min="100"
+                    max="250"
+                    step="1"
+                    value="170"
+                  />
+                </td>
+              </tr>
+
+              <!-- Campo tipo 'search' para búsqueda de ciudad -->
+              <tr>
+                <td><label for="buscar_ciudad">Buscar Ciudad:</label></td>
+                <td>
+                  <input
+                    type="search"
+                    id="buscar_ciudad"
+                    name="buscar_ciudad"
+                    placeholder="Ej. Buenos Aires"
+                  />
+                </td>
+              </tr>
+
+              <!-- Campo tipo 'url' para sitio web personal -->
+              <tr>
+                <td><label for="sitio_web">Sitio Web Personal:</label></td>
+                <td>
+                  <input
+                    type="url"
+                    id="sitio_web"
+                    name="sitio_web"
+                    placeholder="http://ejemplo.com"
+                  />
+                </td>
+              </tr>
+
+              <!-- Campo oculto -->
+              <tr>
+                <td colspan="2" align="center">
+                  <input type="hidden" name="origen" value="registro" />
+                  <input type="reset" value="Restablecer" />
+                  <input type="submit" value="Registrarse" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+
+      <!-- Pie de página -->
+      <tr height="15%" bgcolor="#2c3e50">
+        <td colspan="3" align="center" style="color: white">
+          <p>&copy; 2025 Noticias Hoy - Todos los derechos reservados</p>
+          <a href="index.html" style="color: white">Regresar al inicio</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
