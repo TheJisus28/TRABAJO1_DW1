@@ -33,3 +33,7 @@ Este es mi primer trabajo de desarrollo web, en el cual he creado un sitio web c
 ## 📌 Notas
 
 Este proyecto fue desarrollado siguiendo un enfoque clásico, utilizando tablas para la maquetación en lugar de `divs`. Sirve como una introducción a la estructura y elementos de HTML sin uso de CSS o tecnologías modernas.
+
+## ✍️ Creado por
+
+**Jesús Daniel Carrascal Hoyos**
